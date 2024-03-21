@@ -4,7 +4,7 @@ var main = document.querySelector(".main");
 var lineCount = 40;
 var minCharCount = 20;
 var maxCharCount = 40;
-var topPos = (maxCharCount - 1) / 2 * 10;
+var topPos = ((maxCharCount - 1) / 2) * 10;
 var mainWidth = main.offsetWidth;
 var mainHeight = main.offsetHeight;
 
@@ -27,7 +27,7 @@ function animate(index, charCount, opacity, potition, tick) {
   var pos = -mainHeight;
   var id = setInterval(frame, random(1, 10));
   var lineChar = getLineChar(charCount);
-  var id2 = setInterval(function() {
+  var id2 = setInterval(function () {
     var lineChar2 = getLineChar(charCount);
     var textWidth = getTextWidth(lineChar2, "bold 16px Consolas");
     elem.querySelector("span").innerHTML = lineChar2;
@@ -57,7 +57,7 @@ function generateLine(index, charCount, opacity, potition, tick) {
   html += `<div>⠀</div>`;
   html += `<span>${getLineChar(charCount)}<span>`;
   html += `</div>`;
-  setTimeout(function() {
+  setTimeout(function () {
     main.insertAdjacentHTML("beforeend", html);
     animate(index, charCount, opacity, potition, tick);
   }, tick + index * 100);
