@@ -1,7 +1,7 @@
 body .main {
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: 500vh;
     background-color: #000;
     color: green;
   }
@@ -22,7 +22,7 @@ body .main {
     background: linear-gradient(90deg, transparent 30%, black 100%);
   }
 
-  #intro{
+  #edu{
     z-index:  1;
     position:relative;
     background-color: black;
@@ -30,6 +30,16 @@ body .main {
     font: 1.3rem Inconsolata, monospace;
     text-shadow: 0 0 5px #C8C8C8;
     width: 900px ;
+    height: 200px;
+  }
+  #summary{
+    z-index:  1;
+    position:relative;
+    background-color: black;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+    width: 1700px ;
     height: 200px;
   }
 
@@ -62,4 +72,26 @@ body .main {
       transparent 1px,
       transparent 2px
     );
+  }
+
+  #project_experience{
+    z-index:  1;
+    position:relative;
+    background-color: black;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
+  }
+
+  #me{
+    border-radius: 20%;
+  }
+
+  #about{
+    z-index:  1;
+    position:relative;
+    background-color: black;
+    color: white;
+    font: 1.3rem Inconsolata, monospace;
+    text-shadow: 0 0 5px #C8C8C8;
   }
