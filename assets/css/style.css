@@ -22,7 +22,7 @@ body .main {
     background: linear-gradient(90deg, transparent 30%, black 100%);
   }
 
-  header{
+  body header{
     text-align: center;
     padding: 40px 5px 40px 5px;
     border: 3px solid #A02422;
@@ -37,7 +37,7 @@ body .main {
     text-shadow: 0 0 5px #C8C8C8;
   }
 
-  header::after {
+  body header::after {
     content: "";
     position: absolute;
     top: 0;
